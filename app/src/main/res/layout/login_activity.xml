@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+
+    android:gravity="center"> <!-- Center components vertically and horizontally -->
+
+    <!-- Google Login Button -->
+    <LinearLayout
+        android:id="@+id/btn_sign_up_google"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/corner_radius"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_google"
+            android:contentDescription="Google Icon"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Google"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Phone Number Login Button -->
+    <LinearLayout
+        android:id="@+id/btn_sign_up_number"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/corner_radius"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_call"
+            android:contentDescription="Phone Icon"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with number"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Email Login -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or login with your email"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#666666" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="CONTINUE"
+        android:background="@drawable/corner_radius"
+        android:enabled="true"
+        android:textColor="#000000"
+        android:elevation="4dp" />
+</LinearLayout>

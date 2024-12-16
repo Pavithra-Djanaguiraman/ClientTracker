@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Search Bar -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:queryHint="Search here.."
+        android:background="@color/yankees_blue"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- List of Memberships -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Individual Cards -->
+            <!-- 1st Membership Entry -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/peach">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <!-- Name -->
+                    <TextView
+                        android:id="@+id/member_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kushal"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <!-- Phone Number -->
+                    <TextView
+                        android:id="@+id/member_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/member_name"
+                        android:text="8753461954"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <!-- Edit Icon -->
+                    <ImageView
+                        android:id="@+id/edit_icon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Delete Icon -->
+                    <ImageView
+                        android:id="@+id/delete_icon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/edit_icon"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_delete"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Membership Info -->
+                    <TextView
+                        android:id="@+id/membership_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="4dp"
+                        android:text="1 Year Platinum\n16 April 2024"
+                        android:textSize="12sp"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Duplicate the above card for other entries like Nikhil, Rahul, etc. -->
+            <!-- Modify the content for name, phone, and membership info. -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

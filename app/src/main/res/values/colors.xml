@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="slate_grey">#708090</color>
+    <color name="greenish">#3CB371</color>
+    <color name="light_slate_grey">#778899</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="pinkish_white">#FADADD</color>
+    <color name="pinkish_red">#FF4D6D</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="yankees_blue">#1C2841</color>
+    <color name="peach">#FFDAB9</color>
 </resources>

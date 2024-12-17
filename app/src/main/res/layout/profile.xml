@@ -28,7 +28,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/rounded_corner_background"
-        android:fontFamily="@font/Kameron-bold.ttf"
+        android:fontFamily="@font/kameron_bold"
         android:padding="8dp"
         android:text="John Doe"
         android:textColor="@color/white"

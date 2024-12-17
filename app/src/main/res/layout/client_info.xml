@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient">
@@ -42,61 +43,6 @@
                 app:cardElevation="8dp"
                 app:cardBackgroundColor="@color/peach">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="12dp">
-
-                    <!-- Name -->
-                    <TextView
-                        android:id="@+id/member_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kushal"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                    <!-- Phone Number -->
-                    <TextView
-                        android:id="@+id/member_phone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/member_name"
-                        android:text="8753461954"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <!-- Edit Icon -->
-                    <ImageView
-                        android:id="@+id/edit_icon"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_edit"
-                        android:layout_marginEnd="8dp" />
-
-                    <!-- Delete Icon -->
-                    <ImageView
-                        android:id="@+id/delete_icon"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_below="@id/edit_icon"
-                        android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_delete"
-                        android:layout_marginEnd="8dp" />
-
-                    <!-- Membership Info -->
-                    <TextView
-                        android:id="@+id/membership_info"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="4dp"
-                        android:text="1 Year Platinum\n16 April 2024"
-                        android:textSize="12sp"
-                        android:textColor="@color/black" />
-                </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Duplicate the above card for other entries like Nikhil, Rahul, etc. -->
@@ -104,4 +50,48 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="75dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kushal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/member_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/member_name"
+            android:text="8753461954"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Edit Icon -->
+
+        <!-- Delete Icon -->
+
+        <!-- Membership Info -->
+        <TextView
+            android:id="@+id/membership_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:text="1 Year Platinum\n16 April 2024"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

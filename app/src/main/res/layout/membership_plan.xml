@@ -18,7 +18,6 @@
         android:text="Membership Plans"
         android:textColor="@color/pinkish_white"
         android:textSize="30sp"
-        android:fontFamily="@font/righteous_regular"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- TabLayout for Monthly and Yearly -->
@@ -58,6 +57,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/platinum"
                     android:background="@color/pinkish_red"
                     android:padding="16dp">
 
@@ -93,7 +93,7 @@
                         android:layout_marginStart="35dp"
                         android:layout_marginTop="-1dp"
                         android:layout_toEndOf="@id/icon_platinum"
-                        android:text="Strength, Cardio & Crossfit\nSteam Sauna\nShower & Locker Facility\nPersonal Trainer"
+                        android:text="Strength, Cardio &amp; Crossfit\nSteam Sauna\nShower &amp; Locker Facility\nPersonal Trainer"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
@@ -121,6 +121,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/pinkish_red"
+                    android:id="@+id/gold"
                     android:padding="16dp">
 
                     <!-- Icon -->
@@ -155,7 +156,7 @@
                         android:layout_marginStart="35dp"
                         android:layout_marginTop="3dp"
                         android:layout_toEndOf="@id/icon_gold"
-                        android:text="Strength & Cardio\nShower & Locker Facility\nMerch (bag, bottle/shaker)\nDiet Plan"
+                        android:text="Strength &amp; Cardio\nShower &amp; Locker Facility\nMerch (bag, bottle/shaker)\nDiet Plan"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
@@ -183,6 +184,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/pinkish_red"
+                    android:id="@+id/silver"
                     android:padding="16dp">
 
                     <!-- Icon -->

@@ -23,7 +23,6 @@
             android:layout_height="87dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="32dp"
-            android:fontFamily="@font/extra_bold_jost"
             android:text="Client Tracker"
             android:textColor="@color/greenish"
             android:textSize="34sp"
@@ -37,7 +36,7 @@
             android:layout_height="206dp"
             android:layout_marginTop="88dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/Dashboard"
+            android:src="@drawable/mainpic"
             app:civ_border_color="@color/white"
             app:civ_border_width="2dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +51,8 @@
             android:text="Logout"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="32dp" />
+            tools:layout_editor_absoluteY="32dp"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Scrollable Grid Section -->
@@ -80,7 +80,8 @@
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@color/light_slate_grey"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/profile">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -91,7 +92,7 @@
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="180dp"
-                        app:srcCompat="@drawable/ic_trainer" />
+                        app:srcCompat="@drawable/ic_dashboard" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -99,6 +100,7 @@
             <!-- Example Card 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
+                android:id="@+id/Client"
                 android:layout_height="180dp"
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@color/light_slate_grey"
@@ -114,7 +116,7 @@
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="180dp"
-                        app:srcCompat="@drawable/ic_workout" />
+                        app:srcCompat="@drawable/ic_client" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -126,7 +128,8 @@
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@color/light_slate_grey"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/membership_plan">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -137,7 +140,7 @@
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="180dp"
-                        app:srcCompat="@drawable/ic_diet" />
+                        app:srcCompat="@drawable/ic_membership_plan" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -145,6 +148,7 @@
             <!-- Example Card 4 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
+                android:id="@+id/add_data"
                 android:layout_height="180dp"
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@color/light_slate_grey"
@@ -160,7 +164,7 @@
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="180dp"
-                        app:srcCompat="@drawable/ic_progress" />
+                        app:srcCompat="@drawable/ic_add_data" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

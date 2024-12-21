@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,34 +14,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClientTracker"
         tools:targetApi="31">
-    <activity
-        android:name=".launch"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        android:label="Client Tracker"
-        android:screenOrientation="portrait"
-        android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize"
-        android:exported="true"
-        tools:ignore="WrongManifestParent">
-        <!-- Set as launcher activity to be the first screen -->
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
 
-    <!-- Main Activity (Sign Up Screen) -->
-    <activity
-        android:name=".MainActivity"
-        android:label="Sign Up">
-    </activity>
+        <activity
+            android:name=".launch"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize"
+            android:exported="true"
+            android:label="Client Tracker"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="WrongManifestParent">
 
-    <!-- GoogleSignInActivity -->
-    <activity android:name=".GoogleSignInActivity" />
+            <!-- Set as launcher activity to be the first screen -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    <!-- NumberSignInActivity -->
-    <activity android:name=".NumberSignInActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Main Activity (Sign Up Screen) -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Sign Up"></activity> <!-- GoogleSignInActivity -->
+        <activity android:name=".GoogleSignInActivity" /> <!-- NumberSignInActivity -->
+        <activity android:name=".NumberSignInActivity" /> <!-- Login Activity -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MembershipPlanActivity" />
+        <activity android:name=".AddDataActivity" />
+        <activity android:name=".Client" />
 
-    <!-- Login Activity -->
-    <activity android:name=".LoginActivity" />
     </application>
+
 </manifest>
+
+
+
+

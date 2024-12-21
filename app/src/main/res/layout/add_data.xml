@@ -30,7 +30,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/yankees_blue"
-            android:src="@drawable/close_btn"
+
             tools:ignore="RtlHardcoded"
             android:contentDescription="Close" />
 
@@ -41,10 +41,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/user"
+
             android:drawableTint="@color/black"
             android:drawablePadding="10dp"
-            android:background="@drawable/editttext_white"
+
             android:ems="10"
             android:hint="Name *"
             android:inputType="textPersonName"
@@ -61,10 +61,10 @@
             android:layout_marginTop="6dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/email"
+
             android:drawableTint="@color/black"
             android:drawablePadding="10dp"
-            android:background="@drawable/editttext_white"
+
             android:ems="10"
             android:hint="Email *"
             android:inputType="textEmailAddress"
@@ -80,10 +80,10 @@
             android:layout_marginTop="6dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/phone"
+
             android:drawableTint="@color/black"
             android:drawablePadding="10dp"
-            android:background="@drawable/editttext_white"
+
             android:ems="10"
             android:hint="Phone No *"
             android:inputType="phone"
@@ -100,10 +100,10 @@
             android:layout_marginTop="6dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/key"
+
             android:drawableTint="@color/black"
             android:drawablePadding="10dp"
-            android:background="@drawable/editttext_white"
+
             android:ems="10"
             android:hint="Password *"
             android:inputType="textPersonName"
@@ -120,8 +120,7 @@
             android:layout_marginTop="6dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/editttext_white"
-            android:drawableStart="@drawable/ic_upi"
+
             android:drawableTint="@color/black"
             android:drawablePadding="10dp"
             android:ems="10"
@@ -141,7 +140,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:background="@drawable/button_bg"
+
             android:text="Add Client"
             android:textColor="#ffffff"
             android:textSize="20sp"

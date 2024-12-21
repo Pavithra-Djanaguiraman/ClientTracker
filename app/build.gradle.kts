@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.androidApplication)
-    id("com.google.gms.google-services")
 }
 
 android {
@@ -33,16 +32,12 @@ android {
 }
 
 dependencies {
-    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
+
     
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
-    
-    implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.firebase:firebase-database")
-    implementation("com.google.firebase:firebase-storage")
-    
-    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+    implementation ("androidx.appcompat:appcompat:1.6.1")
     
     implementation("com.github.bumptech.glide:glide:4.16.0")
     

@@ -5,12 +5,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
-import android.text.style.UnderlineSpan;
-import android.text.TextPaint;
+import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,18 +34,19 @@ public class MainActivity extends AppCompatActivity {
         btnSignUpGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to Google Sign-In page
-                Intent intent = new Intent(MainActivity.this, GoogleSignInActivity.class);
+                Log.d("MainActivity", "Google Sign-Up button clicked");
+                Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
         });
+
 
         // Set onClickListener for Number Sign-Up Button
         btnSignUpNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Navigate to Number Sign-In page
-                Intent intent = new Intent(MainActivity.this, NumberSignInActivity.class);
+                Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
         });
